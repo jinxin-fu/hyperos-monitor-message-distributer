@@ -1,0 +1,7 @@
+domain: distributer.pml.com.cn
+repo: distributer
+resources:
+- group: infra
+  kind: Object
+  version: v1
+version: "2"

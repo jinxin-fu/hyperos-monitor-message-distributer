@@ -1,0 +1,28 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - infra.distributer.pml.com.cn
+  resources:
+  - objects
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - infra.distributer.pml.com.cn
+  resources:
+  - objects/status
+  verbs:
+  - get
+  - patch
+  - update
